@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bianka Camila Hacha Calienes</title>
+    <meta name="description" content="Página personal y académica de Bianka Camila Hacha Calienes.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #222222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: white;
+            border-bottom: 1px solid #eeeeee;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav h2 {
+            font-size: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 75px 10%;
+            scroll-margin-top: 85px;
+        }
+
+        .inicio {
+            text-align: center;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .subtitulo {
+            color: #777;
+            font-size: 18px;
+        }
+
+        .linea {
+            width: 55px;
+            height: 3px;
+            background: black;
+            margin: 20px auto;
+        }
+
+        .contenedor {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .tarjeta {
+            border: 1px solid #eeeeee;
+            padding: 22px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .tarjetas {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .boton {
+            display: inline-block;
+            color: white;
+            background: black;
+            padding: 11px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #eeeeee;
+            color: #777;
+        }
+
+        @media(max-width: 650px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+
+            section {
+                padding: 55px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>Bianka Camila</h2>
+
+        <div>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#materias">Materias</a>
+            <a href="#malla">Malla curricular</a>
+            <a href="#companeros">Compañeros</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+</header>
+
+<section class="inicio" id="inicio">
+    <div class="contenedor">
+        <h1>Bianka Camila Hacha Calienes</h1>
+        <div class="linea"></div>
+
+        <p class="subtitulo">
+            Bienvenidos a mi página web personal y académica.
+        </p>
+
+        <a href="#sobre-mi" class="boton">Conóceme</a>
+    </div>
+</section>
+
+<section id="sobre-mi">
+    <div class="contenedor">
+        <h2>Sobre mí</h2>
+
+        <p>
+            ¡Hola! Soy Bianka Camila Hacha Calienes.
+            Esta página es un espacio personal donde
+            comparto información sobre mi formación
+            académica, mis cursos y mis actividades.
+        </p>
+    </div>
+</section>
+
+<section id="materias">
+    <div class="contenedor">
+        <h2>Mis materias</h2>
+
+        <p>Estas son algunas de las materias de mi formación académica:</p>
+
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <h3>Programación</h3>
+                <p>Aprendizaje de lógica y desarrollo de programas.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Lógica Matemática</h3>
+                <p>Estudio del razonamiento y pensamiento lógico.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Otras materias</h3>
+                <p>Aquí agregaré mis demás cursos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="malla">
+    <div class="contenedor">
+        <h2>Malla curricular</h2>
+
+        <div class="tarjeta">
+            <h3>Primer ciclo</h3>
+            <p>Aquí agregaré los cursos correspondientes a mi ciclo.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Segundo ciclo</h3>
+            <p>Información académica por completar.</p>
+        </div>
+    </div>
+</section>
+
+<section id="companeros">
+    <div class="contenedor">
+        <h2>Compañeros</h2>
+
+        <p>
+            En esta sección podré compartir información
+            sobre mis compañeros de estudio, con su
+            autorización.
+        </p>
+    </div>
+</section>
+
+<section id="contacto">
+    <div class="contenedor">
+        <h2>Contacto</h2>
+
+        <p>
+            Gracias por visitar mi página web personal.
+        </p>
+
+        <p>Bianka Camila Hacha Calienes</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Bianka Camila Hacha Calienes</p>
+    <p>Mi página web personal</p>
+</footer>
+
+</body>
+</html>
