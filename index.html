@@ -2,258 +2,480 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bianka Camila Hacha Calienes | Inteligencia Artificial</title>
+<meta name="description" content="Portafolio académico de Bianka Camila Hacha Calienes, estudiante de Inteligencia Artificial de la Universidad Católica San Pablo.">
 
-    <title>Bianka Camila Hacha Calienes</title>
-    <meta name="description" content="Página personal y académica de Bianka Camila Hacha Calienes.">
+<style>
+:root {
+    --azul: #173B59;
+    --azul2: #285B80;
+    --celeste: #E8F1F7;
+    --fondo: #F5F8FA;
+    --texto: #263746;
+    --blanco: #FFFFFF;
+}
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #ffffff;
-            color: #222222;
-            line-height: 1.7;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.7;
+}
 
-        header {
-            background: white;
-            border-bottom: 1px solid #eeeeee;
-            padding: 20px 8%;
-            position: sticky;
-            top: 0;
-        }
+header {
+    background: var(--azul);
+    color: white;
+    padding: 17px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
-        nav h2 {
-            font-size: 20px;
-        }
+nav h2 {
+    font-size: 19px;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #222;
-            margin-left: 18px;
-            font-size: 14px;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 13px;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a:hover {
+    color: #B9D8EC;
+}
 
-        section {
-            padding: 75px 10%;
-            scroll-margin-top: 85px;
-        }
+section {
+    padding: 65px 9%;
+    scroll-margin-top: 75px;
+}
 
-        .inicio {
-            text-align: center;
-            padding-top: 120px;
-            padding-bottom: 120px;
-        }
+.inicio {
+    background: linear-gradient(135deg, #173B59, #285B80);
+    color: white;
+    text-align: center;
+    padding: 115px 8%;
+}
 
-        h1 {
-            font-size: 38px;
-            margin-bottom: 15px;
-        }
+.inicio h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    margin-bottom: 12px;
+}
 
-        h2 {
-            margin-bottom: 20px;
-        }
+.inicio p {
+    color: #DCEAF3;
+    font-size: 17px;
+}
 
-        .subtitulo {
-            color: #777;
-            font-size: 18px;
-        }
+.etiqueta {
+    display: inline-block;
+    border: 1px solid #A9C7DC;
+    padding: 6px 15px;
+    border-radius: 30px;
+    margin-bottom: 22px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
 
-        .linea {
-            width: 55px;
-            height: 3px;
-            background: black;
-            margin: 20px auto;
-        }
+.boton {
+    display: inline-block;
+    background: white;
+    color: var(--azul);
+    text-decoration: none;
+    padding: 11px 23px;
+    border-radius: 6px;
+    margin-top: 25px;
+    font-weight: bold;
+}
 
-        .contenedor {
-            max-width: 950px;
-            margin: auto;
-        }
+.contenedor {
+    max-width: 1050px;
+    margin: auto;
+}
 
-        .tarjeta {
-            border: 1px solid #eeeeee;
-            padding: 22px;
-            border-radius: 8px;
-            margin: 15px 0;
-        }
+.titulo {
+    color: var(--azul);
+    font-size: 27px;
+    margin-bottom: 8px;
+}
 
-        .tarjetas {
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-        }
+.linea {
+    width: 48px;
+    height: 3px;
+    background: var(--azul2);
+    margin: 12px 0 25px;
+}
 
-        .boton {
-            display: inline-block;
-            color: white;
-            background: black;
-            padding: 11px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
+.presentacion {
+    background: white;
+}
 
-        footer {
-            text-align: center;
-            padding: 25px;
-            border-top: 1px solid #eeeeee;
-            color: #777;
-        }
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+}
 
-        @media(max-width: 650px) {
-            nav {
-                flex-direction: column;
-            }
+.tarjeta {
+    background: white;
+    padding: 22px;
+    border-radius: 9px;
+    border: 1px solid #E0E8EE;
+    box-shadow: 0 3px 12px rgba(23,59,89,.04);
+}
 
-            nav a {
-                margin: 5px;
-            }
+.tarjeta h3 {
+    color: var(--azul);
+    margin-bottom: 10px;
+    font-size: 17px;
+}
 
-            h1 {
-                font-size: 29px;
-            }
+.tarjeta p {
+    font-size: 14px;
+    color: #5B6873;
+}
 
-            section {
-                padding: 55px 7%;
-            }
-        }
-    </style>
+.docente {
+    border-top: 1px solid #E5EBF0;
+    padding-top: 10px;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.docente a, .enlace {
+    color: var(--azul2);
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.docente a:hover, .enlace:hover {
+    text-decoration: underline;
+}
+
+.fondo-azul {
+    background: var(--celeste);
+}
+
+.ciclo {
+    background: white;
+    padding: 20px;
+    border-left: 4px solid var(--azul2);
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.ciclo h3 {
+    color: var(--azul);
+}
+
+.companero {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.inicial {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: var(--celeste);
+    color: var(--azul);
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.contacto {
+    background: var(--azul);
+    color: white;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: white;
+}
+
+.contacto p {
+    color: #DCEAF3;
+}
+
+.contacto a {
+    color: white;
+    margin: 10px;
+}
+
+footer {
+    background: #102B41;
+    color: #DCEAF3;
+    text-align: center;
+    padding: 23px;
+    font-size: 13px;
+}
+
+@media(max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav div {
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    section {
+        padding: 48px 7%;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <nav>
-        <h2>Bianka Camila</h2>
-
-        <div>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#materias">Materias</a>
-            <a href="#malla">Malla curricular</a>
-            <a href="#companeros">Compañeros</a>
-            <a href="#contacto">Contacto</a>
-        </div>
-    </nav>
+<nav>
+    <h2>BIANKA CAMILA</h2>
+    <div>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#materias">Materias</a>
+        <a href="#malla">Malla curricular</a>
+        <a href="#companeros">Compañeros</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</nav>
 </header>
 
 <section class="inicio" id="inicio">
     <div class="contenedor">
+        <span class="etiqueta">PORTAFOLIO ACADÉMICO</span>
         <h1>Bianka Camila Hacha Calienes</h1>
-        <div class="linea"></div>
-
-        <p class="subtitulo">
-            Bienvenidos a mi página web personal y académica.
-        </p>
-
-        <a href="#sobre-mi" class="boton">Conóceme</a>
+        <p>Estudiante de Inteligencia Artificial</p>
+        <p>Universidad Católica San Pablo</p>
+        <a href="#sobre-mi" class="boton">Conoce mi espacio</a>
     </div>
 </section>
 
-<section id="sobre-mi">
-    <div class="contenedor">
-        <h2>Sobre mí</h2>
+<section class="presentacion" id="sobre-mi">
+<div class="contenedor">
+    <h2 class="titulo">Sobre mí</h2>
+    <div class="linea"></div>
 
-        <p>
-            ¡Hola! Soy Bianka Camila Hacha Calienes.
-            Esta página es un espacio personal donde
-            comparto información sobre mi formación
-            académica, mis cursos y mis actividades.
-        </p>
-    </div>
+    <p>
+    ¡Hola! Soy Bianka Camila Hacha Calienes, estudiante
+    de Inteligencia Artificial en la Universidad Católica
+    San Pablo.
+    </p>
+
+    <p>
+    Actualmente me encuentro construyendo mi formación
+    universitaria, aprendiendo sobre programación,
+    matemáticas y computación. Me interesa seguir
+    desarrollando mis conocimientos y descubrir las
+    posibilidades que ofrece la tecnología.
+    </p>
+
+    <p>
+    Este espacio reúne mis cursos, docentes, información
+    académica y parte de mi experiencia como estudiante.
+    </p>
+</div>
 </section>
 
 <section id="materias">
-    <div class="contenedor">
-        <h2>Mis materias</h2>
+<div class="contenedor">
+    <h2 class="titulo">Mis materias</h2>
+    <div class="linea"></div>
 
-        <p>Estas son algunas de las materias de mi formación académica:</p>
+    <p>Asignaturas de mi formación académica actual.</p>
 
-        <div class="tarjetas">
-            <div class="tarjeta">
-                <h3>Programación</h3>
-                <p>Aprendizaje de lógica y desarrollo de programas.</p>
+    <div class="tarjetas">
+
+        <article class="tarjeta">
+            <h3>Introducción a Computación</h3>
+            <div class="docente">
+                <strong>Ernesto Cuadros Vargas</strong><br>
+                <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">LinkedIn</a>
+                <a href="mailto:ecuadros@ucsp.edu.pe">Correo</a>
             </div>
-
-            <div class="tarjeta">
-                <h3>Lógica Matemática</h3>
-                <p>Estudio del razonamiento y pensamiento lógico.</p>
+            <div class="docente">
+                <strong>Rosmery Violeta Quispe Zavala</strong><br>
+                <a href="https://www.linkedin.com/in/rosmery-violeta-quispe-zavala-58374638/" target="_blank">LinkedIn</a>
+                <a href="mailto:rvquispe@ucsp.edu.pe">Correo</a>
             </div>
+        </article>
 
-            <div class="tarjeta">
-                <h3>Otras materias</h3>
-                <p>Aquí agregaré mis demás cursos.</p>
+        <article class="tarjeta">
+            <h3>Fundamentos de Programación</h3>
+            <div class="docente">
+                <strong>Yessenia Deysi Yari Ramos</strong><br>
+                <a href="https://www.linkedin.com/in/yessenia-deysi-yari-b4778139/" target="_blank">LinkedIn</a>
+                <a href="mailto:ydyari@ucsp.edu.pe">Correo</a>
             </div>
-        </div>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Fundamentos Matemáticos para Computación</h3>
+            <div class="docente">
+                <strong>Sabrina Suárez Calcina</strong><br>
+                <a href="mailto:sgsuarez@ucsp.edu.pe">Correo</a>
+            </div>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Introducción a la Vida Universitaria</h3>
+            <div class="docente">
+                <strong>Gabriela Ponce Reinoso</strong><br>
+                <a href="https://www.linkedin.com/in/gabriela-ponce-145b06149/" target="_blank">LinkedIn</a>
+                <a href="mailto:gponce@ucsp.edu.pe">Correo</a>
+            </div>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Comunicación I</h3>
+            <div class="docente">
+                <strong>Angel Rodríguez Cruz</strong><br>
+                <a href="https://www.linkedin.com/in/angel-rodriguez-cruz-58b78b85/" target="_blank">LinkedIn</a>
+                <a href="mailto:adrodriguez@ucsp.edu.pe">Correo</a>
+            </div>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Lógica</h3>
+            <div class="docente">
+                <strong>Kristel Gisselle Loayza Cruz</strong><br>
+                <a href="https://www.linkedin.com/in/kristel-gisselle-loayza-cruz-abb3b039b/" target="_blank">LinkedIn</a>
+                <a href="mailto:kristel.loayza@ucsp.edu.pe">Correo</a>
+            </div>
+        </article>
+
     </div>
+</div>
 </section>
 
-<section id="malla">
-    <div class="contenedor">
-        <h2>Malla curricular</h2>
+<section class="fondo-azul" id="malla">
+<div class="contenedor">
+    <h2 class="titulo">Malla curricular</h2>
+    <div class="linea"></div>
 
-        <div class="tarjeta">
-            <h3>Primer ciclo</h3>
-            <p>Aquí agregaré los cursos correspondientes a mi ciclo.</p>
-        </div>
+    <p>
+    Mi formación académica pertenece al programa de
+    Inteligencia Artificial de la Universidad Católica San Pablo.
+    </p>
 
-        <div class="tarjeta">
-            <h3>Segundo ciclo</h3>
-            <p>Información académica por completar.</p>
-        </div>
+    <div class="ciclo">
+        <h3>Plan de estudios oficial</h3>
+        <p>
+        Consulta la malla curricular y la organización
+        de asignaturas de mi carrera en la página oficial
+        de la universidad.
+        </p>
+        <a class="enlace"
+        href="https://ucsp.edu.pe/vive-san-pablo/universidad/transparencia/malla-curricular-inteligencia-artificial/"
+        target="_blank">
+        Consultar malla curricular UCSP →
+        </a>
     </div>
+
+    <p>
+    La organización de los ciclos se actualizará con
+    los cursos correspondientes al plan de estudios oficial.
+    </p>
+</div>
 </section>
 
 <section id="companeros">
-    <div class="contenedor">
-        <h2>Compañeros</h2>
+<div class="contenedor">
+    <h2 class="titulo">Mis compañeros</h2>
+    <div class="linea"></div>
 
-        <p>
-            En esta sección podré compartir información
-            sobre mis compañeros de estudio, con su
-            autorización.
-        </p>
+    <p>
+    Durante esta etapa universitaria comparto cursos,
+    aprendizajes y experiencias con otros estudiantes.
+    </p>
+
+    <div class="tarjetas">
+
+        <article class="tarjeta companero">
+            <div class="inicial">E</div>
+            <div>
+                <h3>Emely Mirella Anccari Lopez</h3>
+                <a class="enlace"
+                href="https://www.linkedin.com/in/emely-mirella-anccari-lopez-9371a043a/"
+                target="_blank">Ver perfil de LinkedIn</a>
+            </div>
+        </article>
+
+        <article class="tarjeta companero">
+            <div class="inicial">C</div>
+            <div>
+                <h3>Cinthia</h3>
+                <p>Compañera de estudios</p>
+            </div>
+        </article>
+
+        <article class="tarjeta companero">
+            <div class="inicial">A</div>
+            <div>
+                <h3>Andres Caballero</h3>
+                <a class="enlace"
+                href="https://www.linkedin.com/in/andres-caballero-5a2367436/"
+                target="_blank">Ver perfil de LinkedIn</a>
+            </div>
+        </article>
+
     </div>
+</div>
 </section>
 
-<section id="contacto">
-    <div class="contenedor">
-        <h2>Contacto</h2>
+<section class="contacto" id="contacto">
+<div class="contenedor">
+    <h2 class="titulo">Contacto</h2>
+    <div class="linea" style="background:white;margin-left:auto;margin-right:auto"></div>
 
-        <p>
-            Gracias por visitar mi página web personal.
-        </p>
+    <p>
+    Gracias por visitar mi página personal y académica.
+    </p>
 
-        <p>Bianka Camila Hacha Calienes</p>
-    </div>
+    <p>Bianka Camila Hacha Calienes</p>
+
+    <p>Estudiante de Inteligencia Artificial</p>
+
+    <a href="https://ucsp.edu.pe/" target="_blank">
+    Universidad Católica San Pablo
+    </a>
+</div>
 </section>
 
 <footer>
     <p>© 2026 Bianka Camila Hacha Calienes</p>
-    <p>Mi página web personal</p>
+    <p>Portafolio académico · Inteligencia Artificial</p>
 </footer>
 
 </body>
 </html>
+
